@@ -25,8 +25,8 @@ function generateSoundex(name) {
         }
         prevCode = code;
     }
-    soundexCode = soundexCode.padEnd(4, '0').slice(0, 4);
-    return soundexCode;
+    soundex = soundex.padEnd(4, '0').slice(0, 4);
+    return soundex;
 }
 
 module.exports = {
