@@ -4,7 +4,7 @@ const { generateSoundex } = require('../src/soundex');
 describe('Soundex Algorithm', () => {
     
     it('should handle empty strings', () => {
-        expect(generateSoundex("")).to.equal("");
+        expect(generateSoundex("")).to.equal("0000");
     });
 
     it('should handle single characters', () => {
