@@ -1,0 +1,6 @@
+Test case,Given,When,Then
+Generic string,Robert,Encode using soundex algorithm,R163
+single character,Z,Encode using soundex algorithm,Z000
+empty input,,Encode using soundex algorithm,0
+special characters,S@m!th,Encode using soundex algorithm,S530
+case sensitivity,almond,Encode using soundex algorithm,A553
