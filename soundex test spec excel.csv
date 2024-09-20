@@ -1,0 +1,69 @@
+Test Case 1: Basic Soundex Code Generation
+    Input: "Robert"
+    Expected Output: "R163"
+    Description: Verify that the Soundex code for "Robert" is correctly generated.
+
+Test Case 2: Similar Sounding Names
+    Input: "Rupert"
+    Expected Output: "R163"
+    Description: Ensure that "Rupert" generates the same Soundex code as "Robert".
+
+Test Case 3: Different Names
+    Input: "John"
+    Expected Output: "J530"
+    Description: Check that "John" produces the expected Soundex code.
+
+Test Case 4: Handling Special Characters
+    Input: "O'Reilly"
+    Expected Output: "O640"
+    Description: Verify that the algorithm correctly processes names with apostrophes.
+
+Test Case 5: Empty String Input
+    Input: ""
+    Expected Output: ""
+    Description: Ensure that an empty input returns an empty Soundex code.
+
+Test Case 6: Numeric Input
+    Input: "12345"
+    Expected Output: ""
+    Description: Check that numeric input results in an empty output.
+
+Test Case 7: Trim additional spaces
+    Input: " Smith "
+    Expected Output: "S530"
+    Description: Verify the spaces are ignored.
+
+Test Case 8: Multi-Word Input
+    Input: "Van Der Meer"
+    Expected Output: "V535"
+    Description: Check that the Soundex algorithm handles multi-word names correctly.
+
+Test Case 9: Repeated Characters
+    Input: "Bobby"
+    Expected Output: "B010"
+    Description: Ensure that the Soundex code correctly reflects repeated characters.
+
+Test Case 10: All Vowels
+    Input: "Aeiou"
+    Expected Output: "A000"
+    Description: Verify that a name consisting solely of vowels returns a Soundex code of "A000".
+
+Test Case 11: Mixed Case
+    Input: "john"
+    Expected Output: "J530"
+    Description: Ensure that case variations do not affect the Soundex output.
+
+Test Case 12: Long Input Handling
+    Input: "Alexander"
+    Expected Output: "A425"
+    Description: Check that longer names produce the expected Soundex code.
+
+Test Case 13: Phonetically Similar Names
+    Input: "Smith" and "Smyth"
+    Expected Output: Both should return "S530"
+    Description: Verify that phonetically similar names generate the same Soundex code.
+
+Test Case 14: Names with Numbers
+    Input: "Mary 123"
+    Expected Output: "M640"
+    Description: Ensure that numbers within names do not affect the Soundex output.
